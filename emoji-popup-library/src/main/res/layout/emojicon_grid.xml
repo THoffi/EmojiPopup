@@ -8,6 +8,7 @@
     android:cacheColorHint="@android:color/transparent"
     android:columnWidth="50dip"
     android:horizontalSpacing="0dip"
+    android:paddingVertical="10dip"
     android:numColumns="auto_fit"
     android:scrollbars="none"
     android:verticalSpacing="0dip" />
