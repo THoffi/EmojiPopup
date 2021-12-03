@@ -2,7 +2,19 @@ plugins {
     id 'com.android.library'
     id 'maven-publish'
 }
-
+afterEvaluate {
+    publishing {
+        publications {
+// Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'de.th.emojipopup'
+                artifactId = 'emoji_popup_library'
+                version = '1.0.7'
+            }
+        }
+    }
+}
 android {
     compileSdk 31
 
